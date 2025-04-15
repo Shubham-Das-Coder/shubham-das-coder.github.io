@@ -5,113 +5,30 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Shubham Das | Portfolio</title>
+
+        <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-        <style>
-            * {
-                box-sizing: border-box;
-                scroll-behavior: smooth;
-            }
 
-            body {
-                font-family: 'Inter', sans-serif;
-                margin: 0;
-                background: linear-gradient(to right, #f0f0f0, #fdfdfd);
-                color: #333;
-            }
+        <!-- AOS.js -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-            header {
-                background: linear-gradient(135deg, #1e1e2f, #2b2d42);
-                color: white;
-                padding: 60px 20px;
-                text-align: center;
-            }
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="css/style.css">
 
-            header h1 {
-                font-size: 2.8rem;
-                margin-bottom: 10px;
-            }
-
-            header p {
-                font-size: 1.1rem;
-                opacity: 0.9;
-            }
-
-            header a {
-                color: #ffc107;
-                text-decoration: none;
-                margin: 0 10px;
-                font-weight: bold;
-            }
-
-            section {
-                padding: 40px 20px;
-                max-width: 960px;
-                margin: auto;
-            }
-
-            h2 {
-                color: #2b2d42;
-                font-size: 1.8rem;
-                margin-bottom: 20px;
-                border-bottom: 2px solid #eee;
-                padding-bottom: 5px;
-            }
-
-            .card {
-                background: white;
-                padding: 20px 25px;
-                border-radius: 15px;
-                margin-bottom: 25px;
-                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-
-            .card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            }
-
-            ul {
-                list-style-type: disc;
-                padding-left: 20px;
-                line-height: 1.8;
-            }
-
-            a {
-                color: #0077cc;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-            footer {
-                background: #1e1e2f;
-                color: white;
-                text-align: center;
-                padding: 20px;
-                margin-top: 40px;
-                font-size: 14px;
-            }
-
-            @media (max-width: 768px) {
-                header h1 {
-                    font-size: 2rem;
-                }
-
-                section {
-                    padding: 30px 15px;
-                }
-            }
-        </style>
+        <!-- Favicon (Optional) -->
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/76098696" />
     </head>
 
     <body>
 
-        <header>
+        <!-- Toggle Button -->
+        <div class="toggle-container">
+            <button id="themeToggle">🌞 Toggle Theme</button>
+        </div>
+
+        <header data-aos="fade-down">
             <h1>Shubham Das</h1>
-            <p>Final Year B.Tech CSE-AIML | Intern @ ISI Kolkata | AI/ML Enthusiast</p>
+            <p>AI/ML Engineer | Final Year CSE-AIML | Intern @ ISI Kolkata</p>
             <p>
                 <a href="mailto:shubhamdaskgp@gmail.com">📧 Email</a> |
                 <a href="https://github.com/Shubham-Das-Coder" target="_blank">GitHub</a> |
@@ -119,103 +36,64 @@
             </p>
         </header>
 
-        <section>
+        <section data-aos="fade-up">
             <h2>About Me</h2>
             <div class="card">
                 <p>
-                    I'm a final-year CSE (AI & ML) student with experience in LLMs, RAG, and GPU-heavy tasks during
-                    internships at IIT Kharagpur, ISI Kolkata, and Avkalan.ai. My interests lie in systems research, LLM
-                    inference, and hardware-AI interaction.
+                    Final-year B.Tech (CSE-AIML) student experienced in LLMs, RAG, and deep learning. Passionate about
+                    building AI systems and solving real-world problems with data.
                 </p>
             </div>
         </section>
 
-        <section>
-            <h2>Education</h2>
+        <section data-aos="fade-up">
+            <h2>Resume</h2>
             <div class="card">
-                <p><strong>Haldia Institute of Technology</strong> (2021–2025)<br>
-                    B.Tech in CSE (AI & ML)<br>CGPA: 8.94</p>
-                <p><strong>BNR Excellence Academy</strong> (2019–2021)<br>CBSE Class 12: 74%</p>
-                <p><strong>S.E. Rly Mixed H.S School</strong> (2017–2019)<br>ICSE Class 10: 91.2%</p>
+                <embed src="assets/pdf/resume.pdf" type="application/pdf" width="100%" height="400px" />
             </div>
         </section>
 
-        <section>
-            <h2>Internships</h2>
+        <section data-aos="fade-up">
+            <h2>Publication</h2>
             <div class="card">
-                <ul>
-                    <li><strong>ISI Kolkata</strong> – Research Intern (Jun–Oct 2024): Explored BioBERT and LLMs in
-                        healthcare.</li>
-                    <li><strong>Avkalan.ai</strong> – Project Intern (Oct 2023–May 2024): Built stock rating system
-                        using LLMs and GPT-4.</li>
-                    <li><strong>IIT Kharagpur</strong> – Summer Intern (May–Jul 2022): Forecasted cyclones using
-                        LSTM/GRU models.</li>
-                    <li><strong>1Commerce</strong> – Intern (Jan–Mar 2025): Built stock news dashboard using RAG.</li>
-                    <li><strong>Cybranex</strong> – Intern (Sep–Oct 2022): Developed NLP-based plagiarism detector with
-                        BERT.</li>
-                </ul>
+                <p>Presented at IEMSC-25, Kolkata: IoT & AI-enabled Smart Waste Management System</p>
+                <embed src="assets/pdf/publication.pdf" type="application/pdf" width="100%" height="400px" />
             </div>
         </section>
 
-        <section>
+        <section data-aos="fade-up">
             <h2>Projects</h2>
             <div class="card">
                 <ul>
-                    <li><strong>ResuMeister</strong>: AI-powered resume analyzer + GPT-2 for Q&A<br>
-                        <a href="https://github.com/Shubham-Das-Coder/ResuMeister" target="_blank">GitHub Repo</a>
+                    <li><strong>ResuMeister</strong> – Resume Q&A with GPT-2<br>
+                        <a href="https://github.com/Shubham-Das-Coder/ResuMeister" target="_blank">View on GitHub</a>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section>
-            <h2>Publications</h2>
+        <section data-aos="fade-up">
+            <h2>Contact Me</h2>
             <div class="card">
-                <p><strong>IoT & AI-enabled Smart Waste Management System</strong><br>
-                    Presented at IEMSC-25, IEM Kolkata (Feb 2025)</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <div class="card">
-                <ul>
-                    <li><strong>Languages:</strong> Python, C++, C, Java</li>
-                    <li><strong>ML Libraries:</strong> scikit-learn, pandas, matplotlib, seaborn</li>
-                    <li><strong>DL Frameworks:</strong> PyTorch, TensorFlow, Keras</li>
-                    <li><strong>Databases:</strong> MySQL, SQLite, PostgreSQL</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Certifications</h2>
-            <div class="card">
-                <ul>
-                    <li>AI For Everyone – Coursera</li>
-                    <li>Linear Algebra for ML – Coursera</li>
-                    <li>Calculus for ML – Coursera</li>
-                    <li>Supervised ML: Regression & Classification – Coursera</li>
-                    <li>Advanced Learning Algorithms – Coursera</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Achievements & Hobbies</h2>
-            <div class="card">
-                <ul>
-                    <li>🏆 Runner-up – Kshitij Sand Rover 2023, IIT KGP</li>
-                    <li>🤖 2nd Runner-up – Robowar Prayukti 2023</li>
-                    <li>♟️ 1st Runner-up – Rapid Chess (U-17), 2018</li>
-                    <li>🎵 Singing | 📸 Photography | 🏏 Cricket | ♟ Chess</li>
-                </ul>
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <label>Name:<br><input type="text" name="name" required></label><br><br>
+                    <label>Email:<br><input type="email" name="email" required></label><br><br>
+                    <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br><br>
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </section>
 
         <footer>
             © 2025 Shubham Das. All rights reserved.
         </footer>
+
+        <!-- JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
     </body>
 
