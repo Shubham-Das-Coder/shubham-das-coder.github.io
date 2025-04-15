@@ -106,3 +106,20 @@ footer {
   cursor: pointer;
   font-weight: bold;
 }
+
+.internship-block {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.internship-date {
+  float: right;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.internship-desc {
+  margin: 8px 0 0 0;
+  line-height: 1.6;
+}
