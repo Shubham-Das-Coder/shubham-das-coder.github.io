@@ -5,56 +5,104 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Shubham Das | Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
         <style>
+            * {
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+
             body {
-                font-family: 'Segoe UI', sans-serif;
+                font-family: 'Inter', sans-serif;
                 margin: 0;
-                background: #f9f9f9;
+                background: linear-gradient(to right, #f0f0f0, #fdfdfd);
                 color: #333;
             }
 
             header {
-                background: #1e1e2f;
+                background: linear-gradient(135deg, #1e1e2f, #2b2d42);
                 color: white;
-                padding: 40px 20px;
+                padding: 60px 20px;
                 text-align: center;
             }
 
+            header h1 {
+                font-size: 2.8rem;
+                margin-bottom: 10px;
+            }
+
+            header p {
+                font-size: 1.1rem;
+                opacity: 0.9;
+            }
+
+            header a {
+                color: #ffc107;
+                text-decoration: none;
+                margin: 0 10px;
+                font-weight: bold;
+            }
+
             section {
-                padding: 30px 20px;
-                max-width: 900px;
+                padding: 40px 20px;
+                max-width: 960px;
                 margin: auto;
             }
 
             h2 {
-                color: #1e1e2f;
-                border-bottom: 2px solid #ccc;
+                color: #2b2d42;
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #eee;
                 padding-bottom: 5px;
             }
 
+            .card {
+                background: white;
+                padding: 20px 25px;
+                border-radius: 15px;
+                margin-bottom: 25px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            }
+
             ul {
-                list-style-type: square;
+                list-style-type: disc;
                 padding-left: 20px;
+                line-height: 1.8;
             }
 
             a {
-                color: #1e90ff;
+                color: #0077cc;
                 text-decoration: none;
             }
 
-            .card {
-                background: #fff;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                margin-bottom: 20px;
+            a:hover {
+                text-decoration: underline;
             }
 
             footer {
+                background: #1e1e2f;
+                color: white;
                 text-align: center;
-                font-size: 14px;
-                color: #666;
                 padding: 20px;
+                margin-top: 40px;
+                font-size: 14px;
+            }
+
+            @media (max-width: 768px) {
+                header h1 {
+                    font-size: 2rem;
+                }
+
+                section {
+                    padding: 30px 15px;
+                }
             }
         </style>
     </head>
@@ -73,19 +121,20 @@
 
         <section>
             <h2>About Me</h2>
-            <p>
-                I'm a final-year CSE (AI & ML) student with experience in LLMs, RAG, and GPU-heavy tasks during
-                internships at IIT Kharagpur, ISI Kolkata, and Avkalan.ai. My interests lie in systems research, LLM
-                inference, and hardware-AI interaction.
-            </p>
+            <div class="card">
+                <p>
+                    I'm a final-year CSE (AI & ML) student with experience in LLMs, RAG, and GPU-heavy tasks during
+                    internships at IIT Kharagpur, ISI Kolkata, and Avkalan.ai. My interests lie in systems research, LLM
+                    inference, and hardware-AI interaction.
+                </p>
+            </div>
         </section>
 
         <section>
             <h2>Education</h2>
             <div class="card">
                 <p><strong>Haldia Institute of Technology</strong> (2021–2025)<br>
-                    B.Tech in CSE (AI & ML)<br>
-                    CGPA: 8.94</p>
+                    B.Tech in CSE (AI & ML)<br>CGPA: 8.94</p>
                 <p><strong>BNR Excellence Academy</strong> (2019–2021)<br>CBSE Class 12: 74%</p>
                 <p><strong>S.E. Rly Mixed H.S School</strong> (2017–2019)<br>ICSE Class 10: 91.2%</p>
             </div>
@@ -95,15 +144,15 @@
             <h2>Internships</h2>
             <div class="card">
                 <ul>
-                    <li><strong>ISI Kolkata</strong> – Research Intern (Jun–Oct 2024)<br>Explored BioBERT and LLMs in
+                    <li><strong>ISI Kolkata</strong> – Research Intern (Jun–Oct 2024): Explored BioBERT and LLMs in
                         healthcare.</li>
-                    <li><strong>Avkalan.ai</strong> – Project Intern (Oct 2023–May 2024)<br>Built stock rating system
+                    <li><strong>Avkalan.ai</strong> – Project Intern (Oct 2023–May 2024): Built stock rating system
                         using LLMs and GPT-4.</li>
-                    <li><strong>IIT Kharagpur</strong> – Summer Intern (May–Jul 2022)<br>Forecasted cyclones using
+                    <li><strong>IIT Kharagpur</strong> – Summer Intern (May–Jul 2022): Forecasted cyclones using
                         LSTM/GRU models.</li>
-                    <li><strong>1Commerce</strong> – Intern (Jan–Mar 2025)<br>Built stock news dashboard using RAG.</li>
-                    <li><strong>Cybranex</strong> – Intern (Sep–Oct 2022)<br>Developed NLP-based plagiarism detector
-                        with BERT.</li>
+                    <li><strong>1Commerce</strong> – Intern (Jan–Mar 2025): Built stock news dashboard using RAG.</li>
+                    <li><strong>Cybranex</strong> – Intern (Sep–Oct 2022): Developed NLP-based plagiarism detector with
+                        BERT.</li>
                 </ul>
             </div>
         </section>
@@ -112,8 +161,7 @@
             <h2>Projects</h2>
             <div class="card">
                 <ul>
-                    <li><strong>ResuMeister</strong><br>
-                        AI-powered resume analyzer + GPT-2 for Q&A<br>
+                    <li><strong>ResuMeister</strong>: AI-powered resume analyzer + GPT-2 for Q&A<br>
                         <a href="https://github.com/Shubham-Das-Coder/ResuMeister" target="_blank">GitHub Repo</a>
                     </li>
                 </ul>
