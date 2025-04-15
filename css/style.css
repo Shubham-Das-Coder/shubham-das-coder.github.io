@@ -1,5 +1,5 @@
 :root {
-  --bg: #f0f0f0;
+  --bg: #f7f7f7;
   --text: #1a1a1a;
   --accent: #0077cc;
   --card-bg: white;
@@ -20,13 +20,19 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: all 0.3s ease-in-out;
+  line-height: 1.7;
 }
 
 header {
   background: linear-gradient(135deg, var(--accent), #005fa3);
   color: white;
-  padding: 60px 20px;
+  padding: 70px 20px;
   text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 
 header a {
@@ -41,23 +47,24 @@ header a:hover {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--accent);
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
 }
 
 section {
-  padding: 40px 20px;
+  padding: 50px 25px;
   max-width: 960px;
   margin: auto;
 }
 
 .card {
   background: var(--card-bg);
-  padding: 20px 25px;
+  padding: 30px;
   border-radius: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   box-shadow: 0 5px 20px var(--card-shadow);
   transition: 0.3s ease;
 }
@@ -67,37 +74,20 @@ section {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  font-family: inherit;
-  background: var(--bg);
-  color: var(--text);
+ul {
+  padding-left: 20px;
 }
 
-form button {
-  background-color: var(--accent);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #005fa3;
+ul li {
+  margin-bottom: 12px;
 }
 
 footer {
   background: var(--accent);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  margin-top: 40px;
 }
 
 .toggle-container {
