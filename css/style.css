@@ -78,73 +78,67 @@ ul {
   padding-left: 20px;
 }
 
-ul li {
-  margin-bottom: 12px;
+li {
+  margin-bottom: 10px;
+}
+
+.education-block,
+.internship-block,
+.certification-block {
+  margin-bottom: 25px;
+}
+
+.education-date,
+.internship-date,
+.certification-date {
+  float: right;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.education-desc,
+.internship-desc,
+.certification-desc,
+.education-grade {
+  margin: 5px 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
-  background: var(--accent);
-  color: white;
   text-align: center;
-  padding: 25px;
-  margin-top: 40px;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #f0f0f0;
+  color: #666;
 }
 
 .toggle-container {
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 20px;
-  z-index: 999;
+  z-index: 1000;
 }
 
 #themeToggle {
-  padding: 8px 12px;
-  background: var(--accent);
-  color: white;
+  padding: 10px 15px;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  background-color: var(--accent);
+  color: white;
   font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
 }
 
-/* Internships */
-.internship-block {
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ddd;
-}
-
-.internship-date {
-  float: right;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.internship-desc {
-  margin: 8px 0 0 0;
-  line-height: 1.6;
-}
-
-/* Education */
-.education-block {
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ddd;
-}
-
-.education-date {
-  float: right;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.education-desc {
-  margin: 6px 0 0;
-  font-weight: 500;
-}
-
-.education-grade {
-  margin: 4px 0 0;
-  font-style: italic;
-  color: #555;
+#themeToggle:hover {
+  background-color: #005fa3;
 }
