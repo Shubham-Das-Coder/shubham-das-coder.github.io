@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
             const panel = document.getElementById(section);
             if (panel) {
                 panel.style.display = 'flex';
-                panel.scrollIntoView({ behavior: "smooth", block: "start" });
+                // panel.scrollIntoView({ behavior: "smooth", block: "start" }); // Removed to prevent page movement
             }
         });
     });
