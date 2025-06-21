@@ -1,254 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Shubham Das | Portfolio</title>
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body>
-
-        <div class="toggle-container">
-            <button id="themeToggle">🌞 Toggle Theme</button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Das | Portfolio</title>
+    <meta name="description" content="Shubham Das - AI/ML Enthusiast, Final Year B.Tech CSE-AIML. Explore my projects, internships, skills, and achievements.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/100865420?v=4" type="image/png">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="container">
+            <a href="#" class="logo" aria-label="Homepage">Shubham Das</a>
+            <ul class="nav-links">
+                <li><a href="#about" tabindex="1">About</a></li>
+                <li><a href="#education" tabindex="2">Education</a></li>
+                <li><a href="#internships" tabindex="3">Internships</a></li>
+                <li><a href="#projects" tabindex="4">Projects</a></li>
+                <li><a href="#skills" tabindex="5">Skills</a></li>
+                <li><a href="#certifications" tabindex="6">Certifications</a></li>
+                <li><a href="#achievements" tabindex="7">Achievements</a></li>
+            </ul>
+            <button id="themeToggle" aria-label="Toggle dark mode">🌞</button>
         </div>
+    </nav>
 
-        <header data-aos="fade-down">
+    <header class="hero" data-aos="fade-down">
+        <div class="container">
+            <img src="https://avatars.githubusercontent.com/u/100865420?v=4" alt="Shubham Das" class="profile-img" />
             <h1>Shubham Das</h1>
-            <p>Final Year B.Tech CSE-AIML | AI/ML Enthusiast</p>
-            <p>
-                <a href="mailto:shubhamdaskgp@gmail.com">📧 Email</a> |
-                <a href="https://github.com/Shubham-Das-Coder" target="_blank">GitHub</a> |
-                <a href="https://linkedin.com/in/shubham-das-coder/" target="_blank">LinkedIn</a> |
-                <a href="assets/pdf/resume.pdf" target="_blank">📄 View Resume</a>
-            </p>
-        </header>
-
-        <section data-aos="fade-up">
-            <h2>About Me</h2>
-            <div class="card">
-                <p>
-                    I am a highly motivated final-year Bachelor's student in CSE (AI & ML) passionate about building
-                    impactful AI systems. I enjoy solving challenging problems and actively seek opportunities to grow
-                    through research and real-world applications.
-                </p>
+            <p class="subtitle">Final Year B.Tech CSE-AIML | AI/ML Enthusiast</p>
+            <div class="hero-links">
+                <a href="mailto:shubhamdaskgp@gmail.com" class="btn" target="_blank" rel="noopener">📧 Email</a>
+                <a href="https://github.com/Shubham-Das-Coder" class="btn" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/shubham-das-coder/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="assets/pdf/resume.pdf" class="btn" target="_blank" rel="noopener">📄 Resume</a>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <section data-aos="fade-up">
-            <h2>Education</h2>
-            <div class="card">
-                <div class="education-block">
-                    <p><strong>Haldia Institute of Technology</strong> <span class="education-date">(2021–2025)</span>
-                    </p>
-                    <p class="education-desc">B.Tech in CSE (AI & ML)</p>
-                    <p class="education-grade">CGPA: 8.94</p>
-                </div>
-                <div class="education-block">
-                    <p><strong>BNR Excellence Academy</strong> <span class="education-date">(2019–2021)</span></p>
-                    <p class="education-desc">CBSE Class 12</p>
-                    <p class="education-grade">Percentage: 74.00%</p>
-                </div>
-                <div class="education-block">
-                    <p><strong>S.E. Rly Mixed H.S School</strong> <span class="education-date">(2017–2019)</span></p>
-                    <p class="education-desc">ICSE Class 10</p>
-                    <p class="education-grade">Percentage: 91.20%</p>
-                </div>
-            </div>
-        </section>
-
-        <section data-aos="fade-up">
-            <h2>Internships</h2>
-            <div class="card">
-                <div class="internship-block">
-                    <p><strong>Indian Institute of Technology, Kharagpur</strong> <span class="internship-date">[21 May
-                            2022 – 21 Jul 2022]</span>
-                    </p>
-                    <p class="internship-desc">Forecasted cyclone paths using LSTM & GRU on historical weather datasets.
-                    </p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>MLP Technologies, Puducherry</strong> <span class="internship-date">[8 Aug 2022 – 8 Sep
-                            2022]</span>
-                    </p>
-                    <p class="internship-desc">Built text summarizer using Hugging Face with custom word limit.</p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>CybraneX Pvt Ltd, New Delhi</strong> <span class="internship-date">[15 Sep 2022 – 15 Oct
-                            2022]</span></p>
-                    <p class="internship-desc">Developed plagiarism detection tool using BERT embeddings & cosine
-                        similarity.</p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>DocTunes Audiotech Pvt Ltd, Jaipur</strong> <span class="internship-date">[16 Oct 2022 –
-                            16 Dec
-                            2022]</span></p>
-                    <p class="internship-desc">Developed a machine translation model for English-French bidirectional
-                        translation.</p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>VillaMart Pvt Ltd, Bhubaneswar</strong> <span class="internship-date">[20 Aug 2023 – 19
-                            Oct
-                            2023]</span></p>
-                    <p class="internship-desc">Built a CNN-based model to detect freshness of fruits and vegetables.</p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>Avkalan.ai, London</strong> <span class="internship-date">[16 Oct 2023 – 31 May
-                            2024]</span></p>
-                    <p class="internship-desc">Built stock rating system using GPT-4 to analyze financial metrics and
-                        news.</p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>Wipro Ltd, Remote</strong> <span class="internship-date">[1 May 2024 – 30 Sep
-                            2024]</span></p>
-                    <p class="internship-desc">Worked as Java Full-Stack Intern.
-                        React.</p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>Indian Statistical Institute, Kolkata</strong> <span class="internship-date">[10 Jun 2024
-                            – 9 Oct 2024]</span></p>
-                    <p class="internship-desc">Researched healthcare-specific LLMs like BioBERT for medical text
-                        extraction.</p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>1commerce, Gurugram</strong> <span class="internship-date">[14 Jan 2025 – 12 Mar
-                            2025]</span></p>
-                    <p class="internship-desc">Built real-time news dashboard with RAG-based stock market summarization.
-                    </p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>Indian Institute of Technology, Kharagpur</strong> <span class="internship-date">[10 Mar
-                            2025 – Present]</span></p>
-                    <p class="internship-desc">Working on lane detection, driver emotion and traffic analysis with LLMs.
-                    </p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>University of Liverpool, Liverpool</strong> <span class="internship-date">[21 Apr 2025 –
-                            Present]</span></p>
-                    <p class="internship-desc">Fine-tuning GPT-2 on SQuAD and CoQA for extractive QA using Hugging Face.
-                    </p>
-                </div>
-                <div class="internship-block">
-                    <p><strong>StartCoding, Bengaluru</strong> <span class="internship-date">[5 Jun 2025 –
-                            19 Jun 2025]</span></p>
-                    <p class="internship-desc">Worked on AI-based video creation systems for creating ads.</p>
-                </div>
-            </div>
-        </section>
-
-        <section data-aos="fade-up">
-            <h2>Projects</h2>
-            <div class="card">
-                <ul>
-                    <li><strong>ResuMeister</strong>: AI-powered resume analysis and Q&A tool using GPT-2.<br>
-                        <a href="https://github.com/Shubham-Das-Coder/ResuMeister" target="_blank">GitHub Repo</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li><strong>AgenticCourtroom</strong>: Courtroom RAG system with AI agents for defense, prosecution,
-                        and judgment.<br>
-                        <a href="https://github.com/Shubham-Das-Coder/AgenticCourtroom" target="_blank">GitHub Repo</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section data-aos="fade-up">
-            <h2>Skills</h2>
-            <div class="card">
-                <ul>
-                    <li><strong>Languages:</strong> Python, C++, C, Java</li>
-                    <li><strong>ML Libraries:</strong> NumPy, Scikit-learn, Pandas, Matplotlib, Seaborn</li>
-                    <li><strong>DL Frameworks:</strong> PyTorch, TensorFlow, Keras</li>
-                    <li><strong>Databases:</strong> MySQL, SQLite, PostgreSQL</li>
-                </ul>
-            </div>
-        </section>
-
-        <section data-aos="fade-up">
-            <h2>Certifications</h2>
-            <div class="card">
-                <div class="certification-block">
-                    <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/PM7GH5LHX7D9"
-                                target="_blank">AI
-                                For Everyone</a></strong> – Coursera
-                        <span class="internship-date">[Aug 29, 2023]</span>
-                    </p>
-                </div>
-                <div class="certification-block">
-                    <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/BJEWR2LMLK2X"
-                                target="_blank">Linear Algebra for Machine Learning and Data Science</a></strong> –
-                        Coursera
-                        <span class="internship-date">[Jul 10, 2023]</span>
-                    </p>
-                </div>
-                <div class="certification-block">
-                    <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/WX5K6U2LMDSV"
-                                target="_blank">Supervised Machine Learning: Regression and Classification</a></strong>
-                        –
-                        Coursera
-                        <span class="internship-date">[Jun 30, 2023]</span>
-                    </p>
-                </div>
-                <div class="certification-block">
-                    <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/M3MH4KDY98LR"
-                                target="_blank">Advanced Learning Algorithms</a></strong> – Coursera
-                        <span class="internship-date">[Oct 22, 2023]</span>
-                    </p>
-                </div>
-                <div class="certification-block">
-                    <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/EFRRGR4CJZEQ"
-                                target="_blank">Introduction to Data Science in Python</a></strong> – Coursera
-                        <span class="internship-date">[Jun 3, 2023]</span>
-                    </p>
-                </div>
-                <div class="certification-block">
-                    <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/ZZZUGA2SX2QE"
-                                target="_blank">Divide and Conquer, Sorting and Searching, and Randomized
-                                Algorithms</a></strong> – Coursera
-                        <span class="internship-date">[Jun 2, 2023]</span>
-                    </p>
-                </div>
-                <div class="certification-block">
-                    <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/3J5A67G9CAHH"
-                                target="_blank">What is Data Science?</a></strong> – Coursera
-                        <span class="internship-date">[Jun 2, 2023]</span>
-                    </p>
-                </div>
-                <div class="certification-block">
-                    <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/9UZ7QK38JU7X"
-                                target="_blank">Calculus for Machine Learning and Data Science</a></strong> – Coursera
-                        <span class="internship-date">[Sep 3, 2023]</span>
+    <main>
+        <section id="about" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="card glass">
+                    <p>
+                        I am a highly motivated final-year Bachelor's student in CSE (AI & ML) passionate about building impactful AI systems. I enjoy solving challenging problems and actively seek opportunities to grow through research and real-world applications.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section data-aos="fade-up">
-            <h2>Achievements & Hobbies</h2>
-            <div class="card">
-                <ul>
-                    <li>🏆 Runner-up – Kshitij Sand Rover 2023, IIT KGP</li>
-                    <li>🤖 2nd Runner-up – Robowar Prayukti 2023</li>
-                    <li>♟️ 1st Runner-up – Rapid Chess (U-17), 2018</li>
-                    <li>🎵 Singing | 📸 Photography | 🏏 Cricket | ♟ Chess</li>
-                </ul>
+        <section id="education" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="card glass">
+                    <div class="education-block">
+                        <p><strong>Haldia Institute of Technology</strong> <span class="education-date">(2021–2025)</span></p>
+                        <p class="education-desc">B.Tech in CSE (AI & ML)</p>
+                        <p class="education-grade">CGPA: 8.94</p>
+                    </div>
+                    <div class="education-block">
+                        <p><strong>BNR Excellence Academy</strong> <span class="education-date">(2019–2021)</span></p>
+                        <p class="education-desc">CBSE Class 12</p>
+                        <p class="education-grade">Percentage: 74.00%</p>
+                    </div>
+                    <div class="education-block">
+                        <p><strong>S.E. Rly Mixed H.S School</strong> <span class="education-date">(2017–2019)</span></p>
+                        <p class="education-desc">ICSE Class 10</p>
+                        <p class="education-grade">Percentage: 91.20%</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer>
-            © 2025 Shubham Das. All rights reserved.
-        </footer>
+        <section id="internships" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>Internships</h2>
+                <div class="card glass internships-list">
+                    <!-- List internships in a grid for better readability -->
+                    <div class="internship-block">
+                        <p><strong>Indian Institute of Technology, Kharagpur</strong> <span class="internship-date">[21 May 2022 – 21 Jul 2022]</span></p>
+                        <p class="internship-desc">Forecasted cyclone paths using LSTM & GRU on historical weather datasets.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>MLP Technologies, Puducherry</strong> <span class="internship-date">[8 Aug 2022 – 8 Sep 2022]</span></p>
+                        <p class="internship-desc">Built text summarizer using Hugging Face with custom word limit.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>CybraneX Pvt Ltd, New Delhi</strong> <span class="internship-date">[15 Sep 2022 – 15 Oct 2022]</span></p>
+                        <p class="internship-desc">Developed plagiarism detection tool using BERT embeddings & cosine similarity.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>DocTunes Audiotech Pvt Ltd, Jaipur</strong> <span class="internship-date">[16 Oct 2022 – 16 Dec 2022]</span></p>
+                        <p class="internship-desc">Developed a machine translation model for English-French bidirectional translation.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>VillaMart Pvt Ltd, Bhubaneswar</strong> <span class="internship-date">[20 Aug 2023 – 19 Oct 2023]</span></p>
+                        <p class="internship-desc">Built a CNN-based model to detect freshness of fruits and vegetables.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>Avkalan.ai, London</strong> <span class="internship-date">[16 Oct 2023 – 31 May 2024]</span></p>
+                        <p class="internship-desc">Built stock rating system using GPT-4 to analyze financial metrics and news.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>Wipro Ltd, Remote</strong> <span class="internship-date">[1 May 2024 – 30 Sep 2024]</span></p>
+                        <p class="internship-desc">Worked as Java Full-Stack Intern. React.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>Indian Statistical Institute, Kolkata</strong> <span class="internship-date">[10 Jun 2024 – 9 Oct 2024]</span></p>
+                        <p class="internship-desc">Researched healthcare-specific LLMs like BioBERT for medical text extraction.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>1commerce, Gurugram</strong> <span class="internship-date">[14 Jan 2025 – 12 Mar 2025]</span></p>
+                        <p class="internship-desc">Built real-time news dashboard with RAG-based stock market summarization.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>Indian Institute of Technology, Kharagpur</strong> <span class="internship-date">[10 Mar 2025 – Present]</span></p>
+                        <p class="internship-desc">Working on lane detection, driver emotion and traffic analysis with LLMs.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>University of Liverpool, Liverpool</strong> <span class="internship-date">[21 Apr 2025 – Present]</span></p>
+                        <p class="internship-desc">Fine-tuning GPT-2 on SQuAD and CoQA for extractive QA using Hugging Face.</p>
+                    </div>
+                    <div class="internship-block">
+                        <p><strong>StartCoding, Bengaluru</strong> <span class="internship-date">[5 Jun 2025 – 19 Jun 2025]</span></p>
+                        <p class="internship-desc">Worked on AI-based video creation systems for creating ads.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/main.js"></script>
-        <script>AOS.init();</script>
+        <section id="projects" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="card glass">
+                    <ul>
+                        <li>
+                            <strong>ResuMeister</strong>: AI-powered resume analysis and Q&A tool using GPT-2.<br>
+                            <a href="https://github.com/Shubham-Das-Coder/ResuMeister" target="_blank" rel="noopener">GitHub Repo</a>
+                        </li>
+                        <li>
+                            <strong>AgenticCourtroom</strong>: Courtroom RAG system with AI agents for defense, prosecution, and judgment.<br>
+                            <a href="https://github.com/Shubham-Das-Coder/AgenticCourtroom" target="_blank" rel="noopener">GitHub Repo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    </body>
+        <section id="skills" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="card glass">
+                    <ul class="skills-list">
+                        <li><strong>Languages:</strong> Python, C++, C, Java</li>
+                        <li><strong>ML Libraries:</strong> NumPy, Scikit-learn, Pandas, Matplotlib, Seaborn</li>
+                        <li><strong>DL Frameworks:</strong> PyTorch, TensorFlow, Keras</li>
+                        <li><strong>Databases:</strong> MySQL, SQLite, PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <section id="certifications" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>Certifications</h2>
+                <div class="card glass certifications-list">
+                    <div class="certification-block">
+                        <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/PM7GH5LHX7D9" target="_blank" rel="noopener">AI For Everyone</a></strong> – Coursera <span class="internship-date">[Aug 29, 2023]</span></p>
+                    </div>
+                    <div class="certification-block">
+                        <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/BJEWR2LMLK2X" target="_blank" rel="noopener">Linear Algebra for Machine Learning and Data Science</a></strong> – Coursera <span class="internship-date">[Jul 10, 2023]</span></p>
+                    </div>
+                    <div class="certification-block">
+                        <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/WX5K6U2LMDSV" target="_blank" rel="noopener">Supervised Machine Learning: Regression and Classification</a></strong> – Coursera <span class="internship-date">[Jun 30, 2023]</span></p>
+                    </div>
+                    <div class="certification-block">
+                        <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/M3MH4KDY98LR" target="_blank" rel="noopener">Advanced Learning Algorithms</a></strong> – Coursera <span class="internship-date">[Oct 22, 2023]</span></p>
+                    </div>
+                    <div class="certification-block">
+                        <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/EFRRGR4CJZEQ" target="_blank" rel="noopener">Introduction to Data Science in Python</a></strong> – Coursera <span class="internship-date">[Jun 3, 2023]</span></p>
+                    </div>
+                    <div class="certification-block">
+                        <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/ZZZUGA2SX2QE" target="_blank" rel="noopener">Divide and Conquer, Sorting and Searching, and Randomized Algorithms</a></strong> – Coursera <span class="internship-date">[Jun 2, 2023]</span></p>
+                    </div>
+                    <div class="certification-block">
+                        <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/3J5A67G9CAHH" target="_blank" rel="noopener">What is Data Science?</a></strong> – Coursera <span class="internship-date">[Jun 2, 2023]</span></p>
+                    </div>
+                    <div class="certification-block">
+                        <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/9UZ7QK38JU7X" target="_blank" rel="noopener">Calculus for Machine Learning and Data Science</a></strong> – Coursera <span class="internship-date">[Sep 3, 2023]</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>Achievements & Hobbies</h2>
+                <div class="card glass">
+                    <ul>
+                        <li>🏆 Runner-up – Kshitij Sand Rover 2023, IIT KGP</li>
+                        <li>🤖 2nd Runner-up – Robowar Prayukti 2023</li>
+                        <li>♟️ 1st Runner-up – Rapid Chess (U-17), 2018</li>
+                        <li>🎵 Singing | 📸 Photography | 🏏 Cricket | ♟ Chess</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2025 Shubham Das. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+    </script>
+</body>
 </html>
