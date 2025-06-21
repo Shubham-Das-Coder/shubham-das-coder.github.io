@@ -6,57 +6,45 @@
     <title>Shubham Das | Portfolio</title>
     <meta name="description" content="Shubham Das - AI/ML Enthusiast, Final Year B.Tech CSE-AIML. Explore my projects, internships, skills, and achievements.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="https://avatars.githubusercontent.com/u/100865420?v=4" type="image/png">
 </head>
 <body>
-    <nav class="navbar" aria-label="Main Navigation">
-        <div class="container">
-            <a href="#" class="logo" aria-label="Homepage">Shubham Das</a>
-            <ul class="nav-links">
-                <li><a href="#about" tabindex="1">About</a></li>
-                <li><a href="#education" tabindex="2">Education</a></li>
-                <li><a href="#internships" tabindex="3">Internships</a></li>
-                <li><a href="#projects" tabindex="4">Projects</a></li>
-                <li><a href="#skills" tabindex="5">Skills</a></li>
-                <li><a href="#certifications" tabindex="6">Certifications</a></li>
-                <li><a href="#achievements" tabindex="7">Achievements</a></li>
-            </ul>
-            <button id="themeToggle" aria-label="Toggle dark mode">🌞</button>
-        </div>
-    </nav>
-
-    <header class="hero" data-aos="fade-down">
-        <div class="container">
-            <img src="https://avatars.githubusercontent.com/u/100865420?v=4" alt="Shubham Das" class="profile-img" />
-            <h1>Shubham Das</h1>
-            <p class="subtitle">Final Year B.Tech CSE-AIML | AI/ML Enthusiast</p>
-            <div class="hero-links">
-                <a href="mailto:shubhamdaskgp@gmail.com" class="btn" target="_blank" rel="noopener">📧 Email</a>
-                <a href="https://github.com/Shubham-Das-Coder" class="btn" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://linkedin.com/in/shubham-das-coder/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="assets/pdf/resume.pdf" class="btn" target="_blank" rel="noopener">📄 Resume</a>
-            </div>
+    <div class="theme-toggle-container">
+        <button id="themeToggle" aria-label="Toggle dark mode">🌞</button>
+    </div>
+    <header class="header-top">
+        <img src="https://avatars.githubusercontent.com/u/100865420?v=4" alt="Shubham Das" class="profile-img" />
+        <h1>Shubham Das</h1>
+        <div class="top-links">
+            <a href="mailto:shubhamdaskgp@gmail.com" class="btn" target="_blank" rel="noopener">📧 Email</a>
+            <a href="https://github.com/Shubham-Das-Coder" class="btn" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/shubham-das-coder/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="assets/pdf/resume.pdf" class="btn" target="_blank" rel="noopener">📄 Resume</a>
         </div>
     </header>
-
     <main>
-        <section id="about" class="section" data-aos="fade-up">
-            <div class="container">
+        <nav class="section-nav" aria-label="Section Navigation">
+            <button class="section-btn active" data-section="about">About</button>
+            <button class="section-btn" data-section="education">Education</button>
+            <button class="section-btn" data-section="internships">Internships</button>
+            <button class="section-btn" data-section="projects">Projects</button>
+            <button class="section-btn" data-section="skills">Skills</button>
+            <button class="section-btn" data-section="certifications">Certifications</button>
+            <button class="section-btn" data-section="achievements">Achievements</button>
+        </nav>
+        <section class="section-content">
+            <div class="section-panel" id="about" style="display:block;">
                 <h2>About Me</h2>
-                <div class="card glass">
+                <div class="card">
                     <p>
                         I am a highly motivated final-year Bachelor's student in CSE (AI & ML) passionate about building impactful AI systems. I enjoy solving challenging problems and actively seek opportunities to grow through research and real-world applications.
                     </p>
                 </div>
             </div>
-        </section>
-
-        <section id="education" class="section" data-aos="fade-up">
-            <div class="container">
+            <div class="section-panel" id="education">
                 <h2>Education</h2>
-                <div class="card glass">
+                <div class="card">
                     <div class="education-block">
                         <p><strong>Haldia Institute of Technology</strong> <span class="education-date">(2021–2025)</span></p>
                         <p class="education-desc">B.Tech in CSE (AI & ML)</p>
@@ -74,13 +62,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="internships" class="section" data-aos="fade-up">
-            <div class="container">
+            <div class="section-panel" id="internships">
                 <h2>Internships</h2>
-                <div class="card glass internships-list">
-                    <!-- List internships in a grid for better readability -->
+                <div class="card">
                     <div class="internship-block">
                         <p><strong>Indian Institute of Technology, Kharagpur</strong> <span class="internship-date">[21 May 2022 – 21 Jul 2022]</span></p>
                         <p class="internship-desc">Forecasted cyclone paths using LSTM & GRU on historical weather datasets.</p>
@@ -131,12 +115,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="projects" class="section" data-aos="fade-up">
-            <div class="container">
+            <div class="section-panel" id="projects">
                 <h2>Projects</h2>
-                <div class="card glass">
+                <div class="card">
                     <ul>
                         <li>
                             <strong>ResuMeister</strong>: AI-powered resume analysis and Q&A tool using GPT-2.<br>
@@ -149,12 +130,9 @@
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <section id="skills" class="section" data-aos="fade-up">
-            <div class="container">
+            <div class="section-panel" id="skills">
                 <h2>Skills</h2>
-                <div class="card glass">
+                <div class="card">
                     <ul class="skills-list">
                         <li><strong>Languages:</strong> Python, C++, C, Java</li>
                         <li><strong>ML Libraries:</strong> NumPy, Scikit-learn, Pandas, Matplotlib, Seaborn</li>
@@ -163,12 +141,9 @@
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <section id="certifications" class="section" data-aos="fade-up">
-            <div class="container">
+            <div class="section-panel" id="certifications">
                 <h2>Certifications</h2>
-                <div class="card glass certifications-list">
+                <div class="card">
                     <div class="certification-block">
                         <p><strong><a href="https://www.coursera.org/account/accomplishments/verify/PM7GH5LHX7D9" target="_blank" rel="noopener">AI For Everyone</a></strong> – Coursera <span class="internship-date">[Aug 29, 2023]</span></p>
                     </div>
@@ -195,12 +170,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="achievements" class="section" data-aos="fade-up">
-            <div class="container">
+            <div class="section-panel" id="achievements">
                 <h2>Achievements & Hobbies</h2>
-                <div class="card glass">
+                <div class="card">
                     <ul>
                         <li>🏆 Runner-up – Kshitij Sand Rover 2023, IIT KGP</li>
                         <li>🤖 2nd Runner-up – Robowar Prayukti 2023</li>
@@ -211,17 +183,9 @@
             </div>
         </section>
     </main>
-
     <footer>
-        <div class="container">
-            <span>© 2025 Shubham Das. All rights reserved.</span>
-        </div>
+        <span>© 2025 Shubham Das. All rights reserved.</span>
     </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        AOS.init({ once: true, duration: 800 });
-    </script>
 </body>
 </html>

@@ -24,18 +24,25 @@ themeToggle.addEventListener("click", () => {
 
 window.addEventListener("DOMContentLoaded", () => {
     setTheme(getSavedTheme());
-    // Smooth scroll for nav links
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            if (href && href.startsWith("#")) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    target.scrollIntoView({ behavior: "smooth", block: "start" });
-                    target.setAttribute('tabindex', '-1');
-                    target.focus({ preventScroll: true });
-                }
+
+    // Tab switching logic
+    const buttons = document.querySelectorAll('.section-btn');
+    const panels = document.querySelectorAll('.section-panel');
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', function () {
+            // Remove active from all buttons
+            buttons.forEach(b => b.classList.remove('active'));
+            // Hide all panels
+            panels.forEach(p => p.style.display = 'none');
+            // Activate this button
+            this.classList.add('active');
+            // Show the corresponding panel
+            const section = this.getAttribute('data-section');
+            const panel = document.getElementById(section);
+            if (panel) {
+                panel.style.display = 'flex';
+                panel.scrollIntoView({ behavior: "smooth", block: "start" });
             }
         });
     });
